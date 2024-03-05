@@ -1,1 +1,3 @@
  https://ru.onlinemschool.com/math/formula/regular_polygon/
+
+ https://geleot.ru/education/math/geometry/calc/regular_polygon/radius_of_circle

@@ -9,11 +9,11 @@ int main(int argc, char **argv)
     printf("Введите x, y, z: ");
     scanf("%lf%lf%lf", &x, &y, &z);
 
-    a = (2 * cos(x - M_PI/6)) / (0.5 + pow(sin(y), 2));
+    a = (2*cos(x - M_PI/6)) / (0.5 + pow(sin(y), 2));
     b = 1 + (z*z / (3 + (z*z) / 5));
     
-    printf("res = %lf\n", a);
-    printf("res = %lf\n", b);
+    printf("a = %lf\n", a);
+    printf("b = %lf\n", b);
     
     return 0;
 }

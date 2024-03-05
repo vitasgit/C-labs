@@ -14,7 +14,7 @@ int main(int argc, char **argv)
     
     printf("Введите r вписанной окр: ");
     scanf("%f", &r2);
-
+    
     a1 = 2 * r1 * sinf(M_PI/n);
     a2 = 2 * r2 * tanf(M_PI/n);
     p1 = n * a1;
