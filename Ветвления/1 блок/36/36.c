@@ -9,10 +9,26 @@ int main(int argc, char **argv)
 
     if ((a < b) && (b < c))
     {
-        printf("верно\n");
+        printf("верно %f < %f < %f\n", a, b, c);
     }
     else {
-        printf("неверно\n");
+        printf("неверно %f < %f < %f\n", a, b, c);
+    }
+
+    if ((a <= b) && (b <= c))
+    {
+        printf("верно %f <= %f <= %f\n", a, b, c);
+    }
+    else {
+        printf("неверно %f <= %f <= %f\n", a, b, c);
+    }
+
+    if ((a >= b) && (b >= c))
+    {
+        printf("верно %f >= %f >= %f\n", a, b, c);
+    }
+    else {
+        printf("неверно %f >= %f >= %f\n", a, b, c);
     }
 
 	return 0;
