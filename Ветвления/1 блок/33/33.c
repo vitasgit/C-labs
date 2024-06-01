@@ -9,17 +9,22 @@ int main(int argc, char **argv)
     printf("Введите x, y: ");
     scanf("%f%f", &x, &y );
 
-    max = x;
-    min = y;
-
-    if (x < y)
+    if (x > y)
     {
-        max = y;
-        min = x;
+        printf("max(x): %f\n", x);
+        printf("min(y): %f\n", y);
     }
 
-    printf("max = %f\n", max);
-    printf("min = %f\n", min);
+    else if (x < y)
+    {
+        printf("max(y) = %f\n", y);
+        printf("min(x) = %f\n", x);
+    }
+
+    else {
+        printf("max(x) = %f\n", x);
+        printf("max(y) = %f\n", y);
+    }
 
 	return 0;
 }
