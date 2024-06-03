@@ -4,7 +4,7 @@
 int main(int argc, char **argv)
 {   
     float x, y, z;
-    float eps = 0.0000001;
+    float eps = 0.000001;
 
     printf("Введите x, y, z: ");
     scanf("%f%f%f", &x, &y, &z);
