@@ -13,10 +13,6 @@ int main(int argc, char **argv)
     sum = (x + y + z) / 2;
     prod = (x * y * z) * 2;
 
-    if ((fabs(x - y) < eps) || (fabs(x - z) < eps) || (fabs(y - z) < eps)) {
-        printf("Числа не должны быть равны\n");
-    }
-    
     if (x < y && x < z) {
         x = sum;
 
@@ -48,7 +44,12 @@ int main(int argc, char **argv)
         }
     }
 
-    printf("%f %f %f\n", x, y, z);
+    if ((fabs(x - y) < eps) || (fabs(x - z) < eps) || (fabs(y - z) < eps)) {
+        printf("Числа не должны быть равны\n");
+    }
+    else {
+        printf("%f %f %f\n", x, y, z);
+    }
 
 	return 0;
 }
