@@ -18,35 +18,37 @@ int main(int argc, char **argv)
     }
     
     if (x < y && x < z) {
-        if () {
-            
-        }
         x = sum;
-    }
 
-    if (y < x && y < z) {
+        if (y > z) {
+            y = prod;
+        }
+        else if ((z > y)) {
+            z = prod;
+        }
+    }
+    else if (y < x && y < z) {
         y = sum;
-    }
 
-    if (z < y && z < x) {
+        if (x > z) {
+            x = prod;
+        }
+        else if ((z > x)) {
+            z = prod;
+        }
+    }
+    else if (z < y && z < x) {
         z = sum;
-    }
 
-    if (x > y && x > z) {
-        x = prod;
-    }
-
-    if (y > x && y > z) {
-        y = prod;
-    }
-
-    if (z > y && z > x) {
-        z = prod;
+        if (x > y) {
+            x = prod;
+        }
+        else if ((y > x)) {
+            y = prod;
+        }
     }
 
     printf("%f %f %f\n", x, y, z);
-
-
 
 	return 0;
 }
