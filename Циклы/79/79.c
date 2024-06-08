@@ -1,20 +1,20 @@
 #include <stdio.h>
 #include <math.h>
 
-int main(int argc, char **argv, char **env) {
-    int n, i;
-    float sum, res;
+int main() 
+{   
+    double res;
+    int i, n;
+
     printf("Введите n: ");
     scanf("%d", &n);
 
-    res = 0;
-    sum = 0;
-
-    for (i = 0.1; i <= n; i += 0.1) {
-        sum += 1 + sinf(i);
-        sum*=sum;
+    res = 1.0;
+    for (i = 1; i <= n * 10; i++) {
+        res *= 1.0 + sin(i*0.1);
     }
 
-    printf("Сумма = %f\n", sum);
+    printf("Результат: %lf\n", res);
+
     return 0;
 }
