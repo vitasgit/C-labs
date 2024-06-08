@@ -6,7 +6,8 @@ int main(int argc, char **argv)
     double res, s;
     int i, j, n;
 
-    n = 3;
+    printf("Введите n: ");
+    scanf("%d", &n);
 
     for (i = 1; i <= n; i++) {
         s += sin((double)i);
