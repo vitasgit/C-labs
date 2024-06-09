@@ -8,7 +8,7 @@ int main()
     printf("Введите a: ");
     scanf("%lf", &a);
 
-    sum = 0;
+    sum = 0.0;
     for (i = 1; ; i++) {
         sum += 1.0 / i;
         
