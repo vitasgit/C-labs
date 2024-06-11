@@ -2,7 +2,7 @@
 
 int main()
 { 
-    int i, n, tmp, a, s, count, znak;
+    int n, tmp, a, s, count, znak;
 
     printf("Введите число n: ");
     scanf("%d", &n); 

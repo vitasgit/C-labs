@@ -2,7 +2,7 @@
 
 int main() 
 {   
-    double a, b, sum;
+    double a, sum;
     int i;
 
     printf("Введите a: ");

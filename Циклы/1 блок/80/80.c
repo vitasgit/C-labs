@@ -1,37 +1,43 @@
 #include <stdio.h>
 #include <math.h>
 
-int main() 
+int main(int argc, char **argv, char **env) 
 {   
-    double x, res, a;
-    int i, j, n, znak, fact;
+    double x, a, res, fact;
+    int i,j, n;
 
-    printf("Введите x: ");
+    printf("введите x: ");
     scanf("%lf", &x);
 
-    printf("Введите n: ");
+    printf("введите n: ");
     scanf("%d", &n);
 
     if (n % 2 == 0) {
-        printf("n должно быть нечётным\n");
+        printf("число n должно быть нечётным");
         return 0;
     }
-
+    
     res = 0.0;
-    znak = 1;
-    for (i = 1; i <= n; i += 2) {
-        
-        fact = 1;
-        for (j = 1; j <= i; j++) {
-            fact *= j;
-        }
+	for (i = 1; i <= n; i += 2) {
 
-        a = znak * pow(x, i) / fact;
-        res += a;
-        znak *= -1;
-    }
+		fact = 1;
+		for (j = 1; j <= i; j++) {
+			fact *= j;
+		}
 
-    printf("Результат: %lf\n", res);
+		a = pow(x, i) / fact;
+
+		if ((i / 2) % 2 == 1) {
+			a *= -1;
+		}
+
+		res += a;
+	}
+
+    printf("res: %lf\n", res);
+
+    res = 2 - (pow(2, 3) / (1*2*3)) + (pow(2, 5) / (1*2*3*4*5)) - (pow(2, 7) / (1*2*3*4*5*6*7));
+    printf("res: %lf\n", res);
 
     return 0;
 }

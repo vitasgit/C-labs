@@ -14,7 +14,7 @@ int main()
         res *= 1.0 + sin(i*0.1);
     }
 
-    printf("Результат: %lf\n", res);
+    printf("Результат: %.20lf\n", res);
 
     return 0;
 }
