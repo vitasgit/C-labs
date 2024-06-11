@@ -21,5 +21,7 @@ int main()
     printf("Результат: %lf\n", res);
     printf("sin(5): %lf\n", sin(5));
 
+    //adwadawd
+
     return 0;
 }
