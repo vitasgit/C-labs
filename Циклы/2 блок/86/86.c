@@ -10,7 +10,7 @@ int main()
     tmp = n;
     count = 0;
     while (tmp != 0) {   
-        count = count + 1;
+        count += 1;
         tmp = tmp / 10;
     }
 

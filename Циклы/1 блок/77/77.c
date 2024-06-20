@@ -14,7 +14,6 @@ int main(int argc, char **argv)
     for (i = 1; i <= n; i++) {
         s += sin(i);
         res += 1.0 / s;
-
     }
 
     printf("%lf\n", res);
